@@ -1,11 +1,10 @@
 package com.musa.spring.job;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.musa.spring.company.Company;
+import jakarta.persistence.*;
 import lombok.Data;
+
 
 @Data
 @Entity
@@ -19,6 +18,9 @@ public class Job {
     private String minSalary;
     private String maxSalary;
     private String location;
+
+    @ManyToOne
+    private Company company;
 
     public Job() {
     }
