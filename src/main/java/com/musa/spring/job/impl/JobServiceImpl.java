@@ -11,6 +11,7 @@ import java.util.Optional;
 @Service
 public class JobServiceImpl implements JobService {
     JobRepository jobRepository;
+    private Long nextId = 1L;
 
     public JobServiceImpl(JobRepository jobRepository) {
         this.jobRepository = jobRepository;
@@ -23,6 +24,7 @@ public class JobServiceImpl implements JobService {
 
     @Override
     public void createJob(Job job) {
+        job.setId(nextId++);
         jobRepository.save(job);
     }
 
