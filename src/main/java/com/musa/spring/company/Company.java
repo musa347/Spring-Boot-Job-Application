@@ -15,8 +15,9 @@ public class Company {
     private Long id;
     private String name;
     private String description;
+
     @JsonIgnore
-  @OneToMany(mappedBy = "company")
+    @OneToMany(mappedBy = "company")
     private List<Job> jobs;
 
   @JsonIgnore()

@@ -9,7 +9,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/companies/{companyId}")
 public class ReviewController {
-    private ReviewService reviewService;
+    private final ReviewService reviewService;
 
     public ReviewController(ReviewService reviewService) {
         this.reviewService = reviewService;
@@ -29,7 +29,7 @@ public class ReviewController {
             return new ResponseEntity<>("Review Added Successfully",
                     HttpStatus.OK);
         else
-            return new ResponseEntity<>("Review Not Saved",
+            return new ResponseEntity<>("Review Not Saved, probably company does not exist",
                     HttpStatus.NOT_FOUND);
     }
 

@@ -1,5 +1,6 @@
 package com.musa.spring.job;
 
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -27,11 +28,11 @@ public class JobController {
     }
 
     @GetMapping("/{id}")
-    public Job getJobById(@PathVariable Long id){
+    public ResponseEntity<Job> getJobById(@PathVariable Long id){
         Job job = jobService.getJobById(id);
         if(job != null)
-            return job;
-        return new Job(1L, "testbed", "test", "test", "test", "test");
+            return new ResponseEntity<>(job, HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 
     }
 

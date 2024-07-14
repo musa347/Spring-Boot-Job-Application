@@ -16,8 +16,6 @@ j
 :src/main/java/com/musa/spring/job/impl/JobServiceImpl.java,4/1/4157d4a5c7e3e00caf84aeba2449ab4bd786d586
 d
 4src/main/java/com/musa/spring/job/JopRepository.java,d/a/da58684e8c4ab03a4b35c8ae12881596c4c7d1f3
-g
-7src/main/java/com/musa/spring/company/impl/Company.java,0/d/0dfaab3c5d5d5fd19c92985122efaeaf9ea71e99
 b
 2src/main/java/com/musa/spring/company/Company.java,d/7/d7d86126ac1af85658c4013f25601fa6edc8c059
 l
@@ -37,10 +35,10 @@ j
 j
 :src/main/java/com/musa/spring/review/ReviewController.java,f/6/f686794109d2c9b00eb833eec70de968f560f3b5
 p
-@src/main/java/com/musa/spring/review/impl/ReviewServiewImpl.java,1/1/11e527d372ee51aa8991b63f5e5e333ac1279ee8
-p
 @src/main/java/com/musa/spring/review/impl/ReviewServiceImpl.java,f/a/fab4f597777af88d7617660754bac32521bb0169
 d
 4src/main/java/com/musa/spring/job/JobRepository.java,b/5/b506924a97129ee75a0edf537f2bef582a999410
 i
 9src/main/java/com/musa/spring/FirstSpringApplication.java,6/6/66b5a6ad3d661b6a523dd82098d0f74f2fd4a5df
+=
+git_script.sh,b/0/b0a9d05464e94427ce8c0acddab626db9b5bcf79
